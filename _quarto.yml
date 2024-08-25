@@ -2,11 +2,11 @@ project:
   type: book
 
 book:
-  title: "EDAV"
+  title: "Statapps"
   author: "Joyce Robbins"
   date: today
-  site-url: https://jtr13.github.io/edav3
-  repo-url: https://github.com/jtr13/edav3
+  site-url: https://jtr13.github.io/statapps
+  repo-url: https://github.com/jtr13/statapps
   repo-branch: main
   repo-actions: [source, edit, issue]
   chapters:
