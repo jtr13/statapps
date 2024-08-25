@@ -5,5 +5,5 @@
 
 /.quarto/
 docs/
-_book/
+_site/
 d3.v7.js

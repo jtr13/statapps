@@ -1,21 +1,25 @@
 project:
-  type: book
+  type: website
 
-book:
-  title: "Statapps"
-  author: "Joyce Robbins"
-  date: today
-  site-url: https://jtr13.github.io/statapps
-  repo-url: https://github.com/jtr13/statapps
-  repo-branch: main
-  repo-actions: [source, edit, issue]
-  chapters:
-    - index.qmd
-    - clustering.qmd
+website:
+  title: "statapps"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - clustering.qmd
+    tools:
+      - icon: twitter
+        href: https://twitter.com/
+      - icon: github
+        href: https://github.com/jtr13/statapps
+  page-footer:
+    right: "Built with [Quarto](https://quarto.org/)"
+    left: "&copy; Copyright 2024, Joyce Robbins"
 
 format:
   html:
-    theme: [default, style/edav3.scss]
+    theme: [cerulean, style/edav3.scss]
     code-link: true
     highlight-style: style/joyce.theme
     callout-icon: false
@@ -27,7 +31,6 @@ knitr:
     fig.align: center
     out.width: 50%
 
-
 execute:
   echo: true
   warning: false
@@ -35,4 +38,6 @@ execute:
   error: true
   cache: false
 
-editor: source
+editor:
+  source
+

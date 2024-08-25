@@ -1,8 +1,9 @@
-# Clustering 5
+---
+title: Kmeans
+---
+
 <script src="scripts/d3.v7.js"></script>
 <script src="scripts/kmeans.js"></script>
-
-## Kmeans
 
 <table>
   <tr style="vertical-align: top;">
