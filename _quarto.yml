@@ -1,0 +1,38 @@
+project:
+  type: book
+
+book:
+  title: "EDAV"
+  author: "Joyce Robbins"
+  date: today
+  site-url: https://jtr13.github.io/edav3
+  repo-url: https://github.com/jtr13/edav3
+  repo-branch: main
+  repo-actions: [source, edit, issue]
+  chapters:
+    - index.qmd
+    - clustering.qmd
+
+format:
+  html:
+    theme: [default, style/edav3.scss]
+    code-link: true
+    highlight-style: style/joyce.theme
+    callout-icon: false
+    fig-width: 4
+    fig-height: 3
+
+knitr:
+  opts_chunk:
+    fig.align: center
+    out.width: 50%
+
+
+execute:
+  echo: true
+  warning: false
+  message: false
+  error: true
+  cache: false
+
+editor: source
