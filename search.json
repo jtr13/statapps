@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Introduction"
+  },
+  {
+    "objectID": "clustering.html",
+    "href": "clustering.html",
+    "title": "Kmeans",
+    "section": "",
+    "text": "Kmeans\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nInitialize centroids by randomizing:\n\npoints centroids\n\n\n\n\n\n\n\n\n\n\nDownload SVG Redo (same points) Restart Download data"
+  }
+]
