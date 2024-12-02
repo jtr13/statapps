@@ -17,7 +17,10 @@ title: Kmeans
       <p>Initialize centroids by randomizing:</p>
       <input type="radio" name="initmethod" value="points">points</input>
       <input type="radio" name="initmethod" value="centroids" checked>centroids</input>
-      <div style="height: 30px;"></div>
+      <div style="height: 15px;"></div>
+      <p>points = randomly choose cluster for each point, then calculate centroids</p>
+      <p>centroids = randomly choose k points to be centroids, then reassign points</p>
+      <div style="height: 15px;"></div>
       <div id="buttons"></div>
     </td>
   </tr>  
