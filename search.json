@@ -4,7 +4,7 @@
     "href": "clustering.html",
     "title": "Kmeans",
     "section": "",
-    "text": "Initialize centroids by randomizing:\n\npoints centroids\n\n\n\n\n\n\n\n\n\n\nDownload SVG Redo (same points) Restart Download data"
+    "text": "Initialize centroids by randomizing:\n\npoints centroids\n\n\n\n\npoints = randomly choose cluster for each point, then calculate centroids\n\n\ncentroids = randomly choose k points to be centroids, then reassign points\n\n\n\n\n\n\n\n\n\n\n\nDownload SVG Redo (same points) Restart Download data"
   },
   {
     "objectID": "index.html",
