@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>statapps</title>
+<title>Kmeans with simulated data – statapps</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -88,7 +88,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -96,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Kmeans</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./clustering-simdata.html"> 
+    <a class="nav-link active" href="./clustering-simdata.html" aria-current="page"> 
 <span class="menu-text">Kmeans with simulated data</span></a>
   </li>  
 </ul>
@@ -114,16 +114,107 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Kmeans with simulated data</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="introduction" class="level1">
-<h1>Introduction</h1>
+    
+  
+    
+  </div>
+  
 
 
-</section>
+</header>
+
+
+<script src="scripts/d3.v7.js"></script>
+<script src="scripts/kmeans-simdata.js"></script>
+<table>
+<tbody><tr style="vertical-align: top;">
+<td>
+<h3 id="info" class="anchored">
+</h3>
+<p id="kmse">
+</p>
+<div id="plot" style="padding-left: 20px;">
+
+</div>
+</td>
+<td>
+<div style="height: 30px;">
+
+</div>
+<p>
+Initialize centroids by randomizing:
+</p>
+<input type="radio" name="initmethod" value="points">points <input type="radio" name="initmethod" value="centroids" checked="">centroids
+<div style="height: 15px;">
+
+</div>
+<p>
+points = randomly choose cluster for each point, then calculate centroids
+</p>
+<p>
+centroids = randomly choose k points to be centroids, then reassign points
+</p>
+<div style="height: 15px;">
+
+</div>
+<div id="buttons">
+
+</div>
+</td>
+</tr>
+</tbody></table>
+<div id="buttons" style="padding-left: 75px;">
+<p><button id="download" onclick="downloadSVG()">Download SVG</button> <button id="redo" onclick="redo()">Redo (same points)</button> <button id="restart" onclick="setup()">Restart</button> <button id="savedata" onclick="savedata()">Download data</button></p>
+</div>
+<script>
+  const colorScale = d3.scaleOrdinal(d3.schemeSet1);
+
+  // width and height
+  const w = 400;
+  const h = 400;
+  const margin = {left: 50, right: 20, top: 20, bottom: 50};
+  const innerHeight = h - margin.top - margin.bottom;
+  const innerWidth = w - margin.left - margin.right;
+  
+  // create scale functions
+  const xScale = d3.scaleLinear()
+    .domain([0, 10])
+    .range([0, innerWidth]);
+
+  const yScale = d3.scaleLinear()
+    .domain([0, 10])
+    .range([innerHeight, 0]);
+
+  // define X axis
+  const xAxis = d3.axisBottom()
+    .scale(xScale)
+    .ticks(5);
+
+  // define Y axis
+  const yAxis = d3.axisLeft()
+    .scale(yScale)
+    .ticks(5);
+    
+  let svg;
+  
+  let data;
+  
+  setup();
+  
+</script>
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
