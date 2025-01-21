@@ -8,6 +8,7 @@ website:
       - href: index.qmd
         text: Home
       - clustering.qmd
+      - clustering-simdata.qmd
     tools:
       - icon: twitter
         href: https://twitter.com/
