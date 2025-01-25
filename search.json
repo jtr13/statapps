@@ -1,8 +1,8 @@
 [
   {
-    "objectID": "clustering.html",
-    "href": "clustering.html",
-    "title": "Kmeans",
+    "objectID": "clustering-simdata.html",
+    "href": "clustering-simdata.html",
+    "title": "Kmeans with simulated data",
     "section": "",
     "text": "Initialize centroids by randomizing:\n\npoints centroids\n\n\n\n\npoints = randomly choose cluster for each point, then calculate centroids\n\n\ncentroids = randomly choose k points to be centroids, then reassign points\n\n\n\n\n\n\n\n\n\n\n\nDownload SVG Redo (same points) Restart Download data"
   },
@@ -14,9 +14,9 @@
     "text": "Introduction"
   },
   {
-    "objectID": "clustering-simdata.html",
-    "href": "clustering-simdata.html",
-    "title": "Kmeans with simulated data",
+    "objectID": "clustering.html",
+    "href": "clustering.html",
+    "title": "Kmeans",
     "section": "",
     "text": "Initialize centroids by randomizing:\n\npoints centroids\n\n\n\n\npoints = randomly choose cluster for each point, then calculate centroids\n\n\ncentroids = randomly choose k points to be centroids, then reassign points\n\n\n\n\n\n\n\n\n\n\n\nDownload SVG Redo (same points) Restart Download data"
   }
